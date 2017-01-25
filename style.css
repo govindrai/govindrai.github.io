@@ -1,13 +1,67 @@
 body {
-    background: ;
+    background: #fff;
+    max-width: 1120px;
+    margin: auto;
+    padding: 20px;
 }
 
 #projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project {
+    height: 500px;
     display: inline-block;
-    width: 300px;
+    width: 350px;
+    box-shadow: 0 0 20px black, 0 0 40px white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+h2 {
+    font-family: Arial;
+    text-shadow: 0px 0px 10px white;
+}
+
+h2:hover {
+    color: white;
+}
+
+.project:first-child {
+    background: url('images/yc.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.project:nth-child(2) {
+    background: url('images/cd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+.project:nth-child(3) {
+    background: url('images/cd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+}
+
+a {
+    background-color: white;
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+@media all (max-width: 1160px) {
+    body {
+        width: 830px;
+    }
 }
