@@ -1,0 +1,13 @@
+body {
+    background: ;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: inline-block;
+    width: 300px;
+}
